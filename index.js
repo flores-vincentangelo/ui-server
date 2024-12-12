@@ -4,7 +4,7 @@ const express = require("express");
 let app = express();
 
 
-const distDir = '../ui/cmsc205-frontend/dist/cmsc205-frontend/browser/'
+const distDir = './cmsc205-frontend/browser/'
 app.use(express.static(path.join(__dirname, distDir)));
 
 app.get('*', (req, res) => {
